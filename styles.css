@@ -1,0 +1,192 @@
+/* Global styles for all pages */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url('explosion.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+body {
+  font-family: 'Graduate', serif;
+}
+
+/* Page wrapper to ensure footer sticks to the bottom */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.875);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-video {
+  height: 100px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero, .cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns items next to each other */
+  gap: 20px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+  background: rgba(0, 0, 0, 0.875);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cta {
+  background: rgba(0, 0, 0, 0.378);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;  /* Make the width of the CTA section the same as the form's width */
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: solid;
+  background: rgb(251, 218, 1);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+/* Horizontal Scrolling Video Container */
+.video-scroll-container {
+    display: flex;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    gap: 20px;         /* Space between videos */
+    padding: 20px 0;
+    margin-top: 40px;   /* Space above the container */
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Vertically align the items in the container */
+    width: 100%;        /* Ensure the container takes full width */
+}
+
+.video-item {
+    flex: 0 0 auto;    /* Prevent items from growing or shrinking */
+    width: 300px;      /* Set a fixed width for each video */
+    display: flex;
+    justify-content: center; /* Centers the video in its container */
+    align-items: center; /* Centers the video vertically */
+}
+
+.video {
+    width: 100%;       /* Make video fill the width of the container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+/* Pause videos by default */
+.video {
+  transform: scale(1); /* Reset video scale */
+}
+
+/* When hovering over the video container, play the video */
+.video-item:hover .video {
+  pointer-events: auto;  /* Allow interaction with the video */
+  transform: scale(1.05); /* Optional: Slight zoom on hover */
+}
+
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;  /* Match the max-width to maintain consistent layout */
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.875);  /* Matches the background */
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #ffd300;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #ffcc00;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.875);
+  color: white;
+  padding: 15px;
+  margin-top: auto; /* Ensures footer stays at the bottom */
+}
