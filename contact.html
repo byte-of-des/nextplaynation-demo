@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bungee+Outline&family=Graduate&family=Londrina+Outline&family=Meow+Script&family=Molle&family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+      /* Styles for the Next Play Nation website */
+      body {
+          font-family: 'Graduate', serif;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          background: url('explosion.jpg') no-repeat center center/cover;
+          color: white;
+      }
+      .navbar {
+        background: rgba(0, 0, 0, 0.875);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      }
+      .nav-video {
+        height: 100px; /* Adjust height */
+        width: 150px; /* Adjust width */
+        object-fit: cover; /* Ensures it scales properly */
+        border-radius: 5px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .hero-content {
+        flex: 1;
+        max-width: 50%;
+        background: rgba(0, 0, 0, 0.875);
+        border-radius: 10px;
+      }
+      .hero-image img {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+      }
+      .btn {
+        display: inline-block;
+        background: rgba(255, 213, 0, 0.3);
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      .features {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px 20px;
+      }
+      .feature {
+        background: rgba(0, 0, 0, 0.875);
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+      }
+      h2 {
+        font-family: 'Graduate';
+      }
+      footer {
+        background: rgba(0, 0, 0, 0.875);
+        color: white;
+        padding: 5px;
+      }
+
+      /* New Styles for Contact Form */
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: rgba(0, 0, 0, 0.875);
+        padding: 30px;
+        border-radius: 10px;
+        width: 50%; /* Set the width to 50% of the container */
+        margin: 0 auto; /* Center the form */
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: none;
+      }
+      .contact-form button {
+        padding: 12px 24px;
+        background-color: rgba(255, 201, 5, 0.763);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: rgba(255, 201, 5, 0.9);
+      }
+  </style>
+</head>
+<body class="page-wrapper">
+
+    <!-- Navigation Bar (Same for All Pages) -->
+    <nav class="navbar">
+        <video autoplay loop muted playsinline class="nav-video">
+            <source src="2k.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="mission.html">Our Mission</a>
+            <a href="directors.html">Directors</a>
+            <a href="combines.html">Combines</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Change Content for Each Page) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer (Same for All Pages) -->
+    <footer>
+        <p>&copy; 2025 Next Play Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements (Same for All Pages)
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".btn").forEach(button => {
+                button.addEventListener("click", function() {
+                    alert("Thanks for your interest in Next Play Nation!");
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bungee+Outline&family=Graduate&family=Londrina+Outline&family=Meow+Script&family=Molle&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body class="page-wrapper">
+
+   <!-- Navigation Bar (Same for All Pages) -->
+   <nav class="navbar">
+    <video autoplay loop muted playsinline class="nav-video">
+        <source src="2k.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="directors.html">Directors</a>
+        <a href="combines.html">Combines</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</nav>
+
+    <!-- Hero Section (Change Content for Each Page) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="responsive-title">Our Mission</h1>
+            <p>At Next Play Nation, our mission is to empower young athletes by providing them with the tools, opportunities, and mentorship needed to succeed both on and off the field. We are committed to fostering leadership, character development, and athletic excellence through structured programs, competitive leagues, and hands-on training. By creating a supportive and inspiring environment, we help athletes build confidence, develop essential life skills, and prepare for the next level of their journey—whether in sports, education, or beyond. At Next Play Nation, we believe that every player deserves a path forward, and we are dedicated to making that next play their best one yet.</p>
+        </div>
+    </header>
+
+    <!-- Footer (Same for All Pages) -->
+    <footer>
+        <p>&copy; 2025 Next Play Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements (Same for All Pages)
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".btn").forEach(button => {
+                button.addEventListener("click", function() {
+                    alert("Thanks for your interest in Next Play Nation!");
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

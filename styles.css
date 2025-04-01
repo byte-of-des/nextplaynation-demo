@@ -1,0 +1,169 @@
+/* Global styles for all pages */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url('explosion.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Graduate', serif;
+}
+
+/* Page wrapper to ensure footer sticks to the bottom */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.875);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-video {
+  height: 80px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hero Section */
+.hero, .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 10px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 90%;
+  background: rgba(0, 0, 0, 0.875);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.cta {
+  background: rgba(0, 0, 0, 0.378);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: solid;
+  background: rgb(251, 218, 1);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 10px;
+}
+
+.feature {
+  background: rgba(0, 0, 0, 0.875);
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Camp Search */
+.camp-search {
+  padding: 30px 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.875);
+  border-radius: 10px;
+}
+
+.camp-search-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.camp-search select,
+.camp-search input,
+.camp-search button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Calendar Section */
+.calendar-section {
+  padding: 30px 10px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#calendar {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.875);
+  color: white;
+  padding: 10px;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content, .cta {
+    max-width: 100%;
+  }
+
+  .camp-search-fields {
+    flex-direction: column;
+    align-items: center;
+  }
+}

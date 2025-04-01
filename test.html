@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dripping Effect Container</title>
+    <style>
+        .drop-container {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background: linear-gradient(to bottom, #6A5ACD, #4B0082);
+            overflow: hidden;
+        }
+
+        .drops {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="drop-container">
+        <svg class="drops" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 Q10,10 20,30 T40,30 T60,30 T80,30 T100,30 T120,30 T140,30 T160,30 T180,30 T200,30 T220,30 T240,30 T260,30 T280,30 T300,30 V50 H0 Z" fill="white"/>
+        </svg>
+    </div>
+
+</body>
+</html>
